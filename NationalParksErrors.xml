@@ -61,7 +61,7 @@
     <!-- National Park 5: Rocky Mountain -->
     <NationalPark Rating="4.6">
         <Name>Rocky Mountain</Name>
-        <n>Rocky Mountain National Park</n>
+        <Name>Rocky Mountain National Park</Name>
         <Phone>970-586-1206</Phone>
         <Address NearestAirport="Denver">
             <Number>1000</Number>
