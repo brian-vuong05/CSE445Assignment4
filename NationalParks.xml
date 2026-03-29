@@ -35,6 +35,7 @@
     <NationalPark Rating="4.7">
         <Name>Yosemite</Name>
         <Phone>209-372-0200</Phone>
+        <Phone>209-372-0299</Phone> 
         <Address NearestAirport="Fresno">
             <Number>9035</Number>
             <Street>Village Drive</Street>
