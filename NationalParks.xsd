@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     
-    <!-- Root element: NationalParks -->
+    <!-- NationalParks -->
     <xsd:element name="NationalParks">
         <xsd:complexType>
             <xsd:sequence>
@@ -12,7 +12,7 @@
                             <!-- Name element -->
                             <xsd:element name="Name" type="xsd:string"/>
                             
-                            <!-- Phone element (multiple allowed) -->
+                            <!-- Phone element -->
                             <xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
                             
                             <!-- Address element -->
@@ -25,12 +25,12 @@
                                         <xsd:element name="State" type="xsd:string"/>
                                         <xsd:element name="Zip" type="xsd:string"/>
                                     </xsd:sequence>
-                                    <!-- Required attribute: NearestAirport -->
+                                    <!-- NearestAirport -->
                                     <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
                                 </xsd:complexType>
                             </xsd:element>
                         </xsd:sequence>
-                        <!-- Optional attribute: Rating -->
+                        <!-- Rating -->
                         <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
                     </xsd:complexType>
                 </xsd:element>
