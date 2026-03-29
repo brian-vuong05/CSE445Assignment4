@@ -4,7 +4,7 @@
                xsi:schemaLocation="http://www.example.org/NationalParks NationalParks.xsd">
     
     <NationalPark Rating="4.9">
-        <n>Grand Canyon</n>
+        <Name>Grand Canyon</Name>
         <Phone>928-638-7496</Phone>
         <Phone>888-297-2757</Phone>
         <Phone>866-499-2574</Phone>
@@ -18,7 +18,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.8">
-        <n>Yellowstone</n>
+        <Name>Yellowstone</Name>
         <Phone>307-344-7381</Phone>
         <Phone>866-439-7375</Phone>
         <Address NearestAirport="Jackson Hole">
@@ -31,7 +31,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.7">
-        <n>Yosemite</n>
+        <Name>Yosemite</Name>
         <Phone>209-372-0200</Phone>
         <Phone>209-372-0299</Phone>
         <Address NearestAirport="Fresno">
@@ -44,7 +44,7 @@
     </NationalPark>
     
     <NationalPark>
-        <n>Zion</n>
+        <Name>Zion</Name>
         <Phone>435-772-3256</Phone>
         <Phone>888-518-7070</Phone>
         <Address NearestAirport="St George">
@@ -57,7 +57,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.6">
-        <n>Rocky Mountain</n>
+        <Name>Rocky Mountain</Name>
         <Phone>970-586-1206</Phone>
         <Phone>970-586-1330</Phone>
         <Address NearestAirport="Denver">
@@ -70,7 +70,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.8">
-        <n>Acadia</n>
+        <Name>Acadia</Name>
         <Phone>207-288-3338</Phone>
         <Phone>888-544-2604</Phone>
         <Address NearestAirport="Bangor">
@@ -83,7 +83,7 @@
     </NationalPark>
     
     <NationalPark>
-        <n>Olympic</n>
+        <Name>Olympic</Name>
         <Phone>360-565-3130</Phone>
         <Phone>360-565-3131</Phone>
         <Address NearestAirport="Seattle">
@@ -96,7 +96,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.7">
-        <n>Great Smoky Mountains</n>
+        <Name>Great Smoky Mountains</Name>
         <Phone>865-436-1200</Phone>
         <Phone>877-444-6777</Phone>
         <Address NearestAirport="Knoxville">
@@ -109,7 +109,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.9">
-        <n>Glacier</n>
+        <Name>Glacier</Name>
         <Phone>406-888-7800</Phone>
         <Phone>406-888-7801</Phone>
         <Address NearestAirport="Kalispell">
@@ -122,7 +122,7 @@
     </NationalPark>
     
     <NationalPark>
-        <n>Bryce Canyon</n>
+        <Name>Bryce Canyon</Name>
         <Phone>435-834-5322</Phone>
         <Phone>877-444-6777</Phone>
         <Address NearestAirport="Cedar City">
@@ -135,7 +135,7 @@
     </NationalPark>
     
     <NationalPark Rating="4.8">
-        <n>Arches</n>
+        <Name>Arches</Name>
         <Phone>435-719-2299</Phone>
         <Phone>435-719-2319</Phone>
         <Address NearestAirport="Moab">
