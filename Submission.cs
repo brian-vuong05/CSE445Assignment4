@@ -4,122 +4,93 @@ using System.Xml;
 using Newtonsoft.Json;
 using System.IO;
 
-
-
-/**
- * This template file is created for ASU CSE445 Distributed SW Dev Assignment 4.
- * Please do not modify or delete any existing class/variable/method names. However, you can add more variables and functions.
- * Uploading this file directly will not pass the autograder's compilation check, resulting in a grade of 0.
- * **/
-
-
 namespace ConsoleApp1
 {
-
-
     public class Submission
     {
-        // TODO: Replace these with your actual GitHub Pages URLs
-        public static string xmlURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParks.xml";
-        public static string xmlErrorURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParksErrors.xml";
-        public static string xsdURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParks.xsd";
+        public static string xmlURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParks.xml";
+        public static string xmlErrorURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParksErrors.xml";
+        public static string xsdURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParks.xsd";
 
         public static void Main(string[] args)
         {
-            // Q3.1: Verify XML without errors
             string result = Verification(xmlURL, xsdURL);
             Console.WriteLine(result);
             Console.WriteLine();
 
-            // Q3.2: Verify XML with errors
             result = Verification(xmlErrorURL, xsdURL);
             Console.WriteLine(result);
             Console.WriteLine();
 
-            // Q3.3: Convert XML to JSON
             result = Xml2Json(xmlURL);
             Console.WriteLine(result);
         }
 
-        // Q2.1: XML Validation against XSD
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             try
             {
-                // Download XML and XSD content from URLs
                 string xmlContent = DownloadContent(xmlUrl);
                 string xsdContent = DownloadContent(xsdUrl);
 
-                // Create XmlReaderSettings with validation
                 XmlReaderSettings settings = new XmlReaderSettings();
                 settings.ValidationType = ValidationType.Schema;
                 
-                // Add XSD schema
-                using (StringReader xsdReader = new StringReader(xsdContent))
+                using (StringReader sr = new StringReader(xsdContent))
                 {
-                    XmlSchema schema = XmlSchema.Read(xsdReader, null);
+                    XmlSchema schema = XmlSchema.Read(sr, null);
                     settings.Schemas.Add(schema);
                 }
 
-                // Set validation event handler to capture errors
-                string validationError = "";
-                settings.ValidationEventHandler += (sender, e) =>
+                string error = "";
+                settings.ValidationEventHandler += (s, e) =>
                 {
                     if (e.Severity == XmlSeverityType.Error)
                     {
-                        validationError += e.Message + Environment.NewLine;
+                        error += e.Message + "\n";
                     }
                 };
 
-                // Validate XML against schema
-                using (StringReader xmlReader = new StringReader(xmlContent))
+                using (StringReader sr = new StringReader(xmlContent))
                 {
-                    using (XmlReader reader = XmlReader.Create(xmlReader, settings))
+                    using (XmlReader reader = XmlReader.Create(sr, settings))
                     {
                         while (reader.Read()) { }
                     }
                 }
 
-                // Return result
-                if (string.IsNullOrEmpty(validationError))
+                if (string.IsNullOrEmpty(error))
                 {
                     return "No errors are found";
                 }
                 else
                 {
-                    return validationError.Trim();
+                    return error.Trim();
                 }
             }
             catch (Exception ex)
             {
-                return "Error: " + ex.Message;
+                return ex.Message;
             }
         }
 
-        // Q2.2: XML to JSON Conversion
         public static string Xml2Json(string xmlUrl)
         {
             try
             {
-                // Download XML content from URL
                 string xmlContent = DownloadContent(xmlUrl);
-
-                // Load XML document
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.LoadXml(xmlContent);
-
-                // Convert XML to JSON
-                string jsonText = JsonConvert.SerializeXmlNode(xmlDoc, Newtonsoft.Json.Formatting.Indented);
-
-                return jsonText;
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xmlContent);
+                
+                string json = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented);
+                return json;
             }
             catch (Exception ex)
             {
-                return "Error: " + ex.Message;
+                return ex.Message;
             }
         }
 
-        // Helper method to download content from URL
         private static string DownloadContent(string url)
         {
             using (System.Net.WebClient client = new System.Net.WebClient())
@@ -128,5 +99,4 @@ namespace ConsoleApp1
             }
         }
     }
-
 }
