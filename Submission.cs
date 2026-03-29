@@ -16,11 +16,9 @@ namespace ConsoleApp1
         {
             string result = Verification(xmlURL, xsdURL);
             Console.WriteLine(result);
-            Console.WriteLine();
 
             result = Verification(xmlErrorURL, xsdURL);
             Console.WriteLine(result);
-            Console.WriteLine();
 
             result = Xml2Json(xmlURL);
             Console.WriteLine(result);
