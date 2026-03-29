@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-               xsi:noNamespaceSchemaLocation="NationalParks.xsd">
+<NationalParks xmlns="http://tempuri.org/NationalParks.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://tempuri.org/NationalParks.xsd NationalParks.xsd">
     
     <!-- National Park 1: Grand Canyon -->
     <NationalPark Rating="4.9">
@@ -63,6 +64,7 @@
     <NationalPark Rating="4.6">
         <Name>Rocky Mountain</Name>
         <Phone>970-586-1206</Phone>
+        <Phone>970-586-1330</Phone>
         <Address NearestAirport="Denver">
             <Number>1000</Number>
             <Street>US Highway 36</Street>
@@ -90,6 +92,7 @@
     <NationalPark>
         <Name>Olympic</Name>
         <Phone>360-565-3130</Phone>
+        <Phone>360-565-3131</Phone>
         <Address NearestAirport="Seattle">
             <Number>600</Number>
             <Street>East Park Avenue</Street>
@@ -117,6 +120,7 @@
     <NationalPark Rating="4.9">
         <Name>Glacier</Name>
         <Phone>406-888-7800</Phone>
+        <Phone>406-888-7801</Phone>
         <Address NearestAirport="Kalispell">
             <Number>64</Number>
             <Street>Grinnell Drive</Street>
@@ -144,6 +148,7 @@
     <NationalPark Rating="4.8">
         <Name>Arches</Name>
         <Phone>435-719-2299</Phone>
+        <Phone>435-719-2319</Phone>
         <Address NearestAirport="Moab">
             <Number>5</Number>
             <Street>North US Highway 191</Street>
