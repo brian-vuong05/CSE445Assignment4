@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NationalParks xmlns="http://tempuri.org/NationalParks.xsd"
+<NationalParks xmlns="http://www.example.org/NationalParks"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="http://tempuri.org/NationalParks.xsd NationalParks.xsd">
+               xsi:schemaLocation="http://www.example.org/NationalParks NationalParks.xsd">
     
-    <!-- National Park 1: Grand Canyon -->
     <NationalPark Rating="4.9">
-        <Name>Grand Canyon</Name>
+        <n>Grand Canyon</n>
         <Phone>928-638-7496</Phone>
         <Phone>888-297-2757</Phone>
         <Phone>866-499-2574</Phone>
-        <Address NearestAirport="FlagStaff">
+        <Address NearestAirport="Flagstaff">
             <Number>8</Number>
             <Street>S Entrance Road</Street>
             <City>Grand Canyon</City>
@@ -18,9 +17,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 2: Yellowstone -->
     <NationalPark Rating="4.8">
-        <Name>Yellowstone</Name>
+        <n>Yellowstone</n>
         <Phone>307-344-7381</Phone>
         <Phone>866-439-7375</Phone>
         <Address NearestAirport="Jackson Hole">
@@ -32,11 +30,10 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 3: Yosemite -->
     <NationalPark Rating="4.7">
-        <Name>Yosemite</Name>
+        <n>Yosemite</n>
         <Phone>209-372-0200</Phone>
-        <Phone>209-372-0299</Phone> 
+        <Phone>209-372-0299</Phone>
         <Address NearestAirport="Fresno">
             <Number>9035</Number>
             <Street>Village Drive</Street>
@@ -46,9 +43,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 4: Zion -->
     <NationalPark>
-        <Name>Zion</Name>
+        <n>Zion</n>
         <Phone>435-772-3256</Phone>
         <Phone>888-518-7070</Phone>
         <Address NearestAirport="St George">
@@ -60,9 +56,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 5: Rocky Mountain -->
     <NationalPark Rating="4.6">
-        <Name>Rocky Mountain</Name>
+        <n>Rocky Mountain</n>
         <Phone>970-586-1206</Phone>
         <Phone>970-586-1330</Phone>
         <Address NearestAirport="Denver">
@@ -74,9 +69,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 6: Acadia -->
     <NationalPark Rating="4.8">
-        <Name>Acadia</Name>
+        <n>Acadia</n>
         <Phone>207-288-3338</Phone>
         <Phone>888-544-2604</Phone>
         <Address NearestAirport="Bangor">
@@ -88,9 +82,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 7: Olympic -->
     <NationalPark>
-        <Name>Olympic</Name>
+        <n>Olympic</n>
         <Phone>360-565-3130</Phone>
         <Phone>360-565-3131</Phone>
         <Address NearestAirport="Seattle">
@@ -102,9 +95,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 8: Great Smoky Mountains -->
     <NationalPark Rating="4.7">
-        <Name>Great Smoky Mountains</Name>
+        <n>Great Smoky Mountains</n>
         <Phone>865-436-1200</Phone>
         <Phone>877-444-6777</Phone>
         <Address NearestAirport="Knoxville">
@@ -116,9 +108,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 9: Glacier -->
     <NationalPark Rating="4.9">
-        <Name>Glacier</Name>
+        <n>Glacier</n>
         <Phone>406-888-7800</Phone>
         <Phone>406-888-7801</Phone>
         <Address NearestAirport="Kalispell">
@@ -130,9 +121,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 10: Bryce Canyon -->
     <NationalPark>
-        <Name>Bryce Canyon</Name>
+        <n>Bryce Canyon</n>
         <Phone>435-834-5322</Phone>
         <Phone>877-444-6777</Phone>
         <Address NearestAirport="Cedar City">
@@ -144,9 +134,8 @@
         </Address>
     </NationalPark>
     
-    <!-- National Park 11: Arches -->
     <NationalPark Rating="4.8">
-        <Name>Arches</Name>
+        <n>Arches</n>
         <Phone>435-719-2299</Phone>
         <Phone>435-719-2319</Phone>
         <Address NearestAirport="Moab">
