@@ -2,7 +2,7 @@
 <NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xsi:noNamespaceSchemaLocation="NationalParks.xsd">
     
-    <!-- National Park 1: Grand Canyon (from Figure 1) -->
+    <!-- National Park 1: Grand Canyon -->
     <NationalPark Rating="4.9">
         <Name>Grand Canyon</Name>
         <Phone>928-638-7496</Phone>
