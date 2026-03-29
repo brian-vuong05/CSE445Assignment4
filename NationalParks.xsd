@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- NationalParks -->
+    <xsd:element name="NationalParks">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Multiple NationalPark elements -->
+                <xsd:element name="NationalPark" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <!-- Name element -->
+                            <xsd:element name="Name" type="xsd:string"/>
+                            
+                            <!-- Phone element -->
+                            <xsd:element name="Phone" type="xsd:string" maxOccurs="unbounded"/>
+                            
+                            <!-- Address element -->
+                            <xsd:element name="Address">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Number" type="xsd:string"/>
+                                        <xsd:element name="Street" type="xsd:string"/>
+                                        <xsd:element name="City" type="xsd:string"/>
+                                        <xsd:element name="State" type="xsd:string"/>
+                                        <xsd:element name="Zip" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <!-- NearestAirport -->
+                                    <xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <!-- Rating -->
+                        <xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+</xsd:schema>
