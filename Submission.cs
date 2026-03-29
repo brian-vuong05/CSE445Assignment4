@@ -20,9 +20,9 @@ namespace ConsoleApp1
     public class Submission
     {
         // TODO: Replace these with your actual GitHub Pages URLs
-        public static string xmlURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParks.xml";
-        public static string xmlErrorURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParksErrors.xml";
-        public static string xsdURL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/NationalParks.xsd";
+        public static string xmlURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParks.xml";
+        public static string xmlErrorURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParksErrors.xml";
+        public static string xsdURL = "https://brian-vuong05.github.io/CSE445Assignment4/NationalParks.xsd";
 
         public static void Main(string[] args)
         {
